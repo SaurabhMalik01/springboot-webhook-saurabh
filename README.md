@@ -2,7 +2,6 @@
 
 ## 👤 Submitted by
 - **Name**: Saurabh Malik
-- **RegNo**: REG12347
 - **Email**: saurabh2269.be22@chitkara.edu.in
 
 ## 🚀 Description
