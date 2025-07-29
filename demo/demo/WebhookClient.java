@@ -16,12 +16,12 @@ public class WebhookClient implements CommandLineRunner {
     @Override
     public void run(String... args) {
         try {
-            // Step 1: Generate Webhook
+            
             String url = "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA";
 
             Map<String, String> requestBody = new HashMap<>();
             requestBody.put("name", "Saurabh Malik");
-            requestBody.put("regNo", "REG12347");  // Your own student ID
+            requestBody.put("regNo", "REG12347");  
             requestBody.put("email", "saurabh2269.be22@chitkara.edu.in");
 
             HttpHeaders headers = new HttpHeaders();
@@ -38,7 +38,7 @@ public class WebhookClient implements CommandLineRunner {
                 System.out.println("✅ Webhook: " + webhook);
                 System.out.println("✅ AccessToken: " + accessToken);
 
-                // Step 2: Solve the SQL problem (REPLACE with actual query)
+                
                 String finalQuery = "SELECT p.AMOUNT AS SALARY, " +
                         "CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS NAME, " +
                         "TIMESTAMPDIFF(YEAR, e.DOB, CURDATE()) AS AGE, " +
@@ -50,7 +50,7 @@ public class WebhookClient implements CommandLineRunner {
                         "ORDER BY p.AMOUNT DESC LIMIT 1;";
 
 
-                // Step 3: Submit the query to the webhook
+                
                 Map<String, String> submission = new HashMap<>();
                 submission.put("finalQuery", finalQuery);
 
