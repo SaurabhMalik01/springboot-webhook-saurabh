@@ -1,0 +1,4 @@
+com\example\webhookclient\service\WebhookService.class
+com\example\webhookclient\model\WebhookRequest.class
+com\example\webhookclient\WebhookClientApplication.class
+com\example\webhookclient\model\WebhookResponse.class
